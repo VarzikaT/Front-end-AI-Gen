@@ -32,7 +32,7 @@ const CreatePost = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        data: JSON.stringify({ prompt: "panda mad scientist mixing sparkling chemicals, digital art" }),
+        data: JSON.stringify({ prompt : form.prompt}),
       };
 
       axios(config)
